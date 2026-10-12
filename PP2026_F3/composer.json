@@ -1,0 +1,11 @@
+{
+  "name": "attendance/project",
+  "description": "Attendance application skeleton",
+  "type": "project",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    }
+  }
+}
