@@ -43,7 +43,7 @@ Ikuti langkah-langkah di bawah ini untuk mengonfigurasi dan menjalankan aplikasi
    git clone [https://github.com/dhiaullaturua/PPL2026_F3.git](https://github.com/dhiaullaturua/PPL2026_F3.git)
    cd PPL2026_F3/BE & FE
 
-   berikut bukti dari Tampilan Mobilenya:
+## berikut bukti dari Tampilan Mobilenya:
 
 <img width="716" height="1280" alt="presensi" src="https://github.com/user-attachments/assets/3d153a17-cffa-4e52-9e30-0f375af67c85" />
 <img width="712" height="1280" alt="rekapbulanan" src="https://github.com/user-attachments/assets/4a3672b6-1f00-4c93-97f1-d5e1c7973371" />
