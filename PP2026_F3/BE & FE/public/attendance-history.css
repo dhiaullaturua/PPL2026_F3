@@ -1,0 +1,515 @@
+.attendance-history-page {
+  padding-bottom: 100px;
+}
+
+.attendance-history-page .history-brand {
+  color: #1749e8;
+  font-size: 1.08rem;
+  font-weight: 750;
+  line-height: 1.05;
+}
+
+.attendance-history-page .history-brand small {
+  display: block;
+  margin-top: 3px;
+  color: #454b5c;
+  font-size: 0.68rem;
+  font-weight: 600;
+}
+
+.history-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.history-icon-link {
+  position: relative;
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  color: #39445a;
+  text-decoration: none;
+}
+
+.history-icon-link svg {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.9;
+}
+
+.history-period-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  margin: 8px 0 14px;
+  padding: 4px;
+  border-radius: 13px;
+  background: #eef0ff;
+}
+
+.history-period-tab {
+  min-height: 38px;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  color: #444b5d;
+  font: inherit;
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.history-period-tab.active {
+  background: #214fe0;
+  color: #fff;
+  font-weight: 700;
+}
+
+.history-period-card,
+.history-summary-card,
+.history-record-card,
+.history-breakdown-card {
+  border: 1px solid rgba(222, 225, 239, 0.8);
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 3px 10px rgba(25, 35, 70, 0.035);
+}
+
+.history-period-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding: 13px;
+}
+
+.history-period-icon,
+.history-metric-icon {
+  display: grid;
+  flex: 0 0 38px;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  border-radius: 12px;
+  background: #e0e6ff;
+  color: #1749c8;
+  font-size: 1.1rem;
+}
+
+.history-period-copy {
+  flex: 1;
+  min-width: 0;
+}
+
+.history-period-copy small {
+  display: block;
+  color: #525b6c;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.history-period-copy strong {
+  display: block;
+  margin-top: 2px;
+  font-size: 0.92rem;
+  line-height: 1.2;
+}
+
+.history-period-copy span {
+  display: block;
+  margin-top: 2px;
+  color: #1749c8;
+  font-size: 0.65rem;
+}
+
+.history-period-controls {
+  display: flex;
+  gap: 3px;
+  padding: 4px;
+  border-radius: 9px;
+  background: #f0f2ff;
+}
+
+.history-period-controls button {
+  width: 27px;
+  height: 29px;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  color: #404a60;
+  font-size: 1.15rem;
+  cursor: pointer;
+}
+
+.history-summary-card {
+  margin-bottom: 16px;
+  padding: 14px;
+}
+
+.history-summary-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.history-summary-card h2,
+.history-breakdown-card h2 {
+  margin: 0 0 9px;
+  font-size: 0.9rem;
+}
+
+.history-summary-rate {
+  margin-bottom: 8px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: #d4fae9;
+  color: #006b4b;
+  font-size: 0.62rem;
+  font-weight: 700;
+}
+
+.history-summary-rate[hidden],
+.history-section-heading[hidden] {
+  display: none;
+}
+
+.history-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.history-metric {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  min-height: 54px;
+  padding: 7px;
+  border-radius: 10px;
+  background: #f0f2ff;
+}
+
+.history-metric.wide {
+  grid-column: 1 / -1;
+}
+
+.history-metric.green {
+  background: #e3fbf1;
+  color: #006b4b;
+}
+
+.history-metric.orange {
+  background: #fff0ed;
+  color: #bd3025;
+}
+
+.history-metric.blue {
+  background: #eef0ff;
+  color: #1749c8;
+}
+
+.history-metric.green .history-metric-icon {
+  background: #83f0c5;
+  color: #047857;
+}
+
+.history-metric.orange .history-metric-icon {
+  background: #ffe0dc;
+  color: #e14538;
+}
+
+.history-metric-copy {
+  min-width: 0;
+}
+
+.history-metric-copy small {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+
+.history-metric-copy strong {
+  display: block;
+  margin-top: 1px;
+  color: #172033;
+  font-size: 1rem;
+  line-height: 1.05;
+}
+
+.history-metric-copy strong span {
+  color: #555c6d;
+  font-size: 0.65rem;
+  font-weight: 500;
+}
+
+.history-section-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 0 2px 8px;
+}
+
+.history-section-heading h2 {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.history-section-heading span {
+  color: #51586b;
+  font-size: 0.62rem;
+  white-space: nowrap;
+}
+
+.history-filters {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  margin: 0 -1px 12px;
+  padding: 0 1px 2px;
+  scrollbar-width: none;
+}
+
+.history-filters[hidden],
+.history-record-list[hidden] {
+  display: none;
+}
+
+.history-filters::-webkit-scrollbar {
+  display: none;
+}
+
+.history-filter {
+  flex: 0 0 auto;
+  padding: 7px 12px;
+  border: 0;
+  border-radius: 999px;
+  background: #e9ecff;
+  color: #444b5d;
+  font: inherit;
+  font-size: 0.65rem;
+  cursor: pointer;
+}
+
+.history-filter.active {
+  background: #214fe0;
+  color: #fff;
+}
+
+.history-record-list {
+  display: grid;
+  gap: 8px;
+}
+
+.history-record-card {
+  padding: 12px;
+}
+
+.history-record-card[hidden] {
+  display: none;
+}
+
+.history-record-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #edf0f7;
+}
+
+.history-record-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.history-record-date .record-symbol {
+  color: #07865e;
+  font-size: 1.05rem;
+}
+
+.history-record-date .record-symbol.late {
+  color: #ff9b67;
+}
+
+.history-record-date .record-symbol.overtime {
+  color: #2459ee;
+}
+
+.history-status {
+  flex: 0 0 auto;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #ddfaee;
+  color: #087854;
+  font-size: 0.59rem;
+  font-weight: 700;
+}
+
+.history-status.late {
+  background: #fff0ed;
+  color: #e45d50;
+}
+
+.history-status.overtime {
+  background: #e2e8ff;
+  color: #214fe0;
+}
+
+.history-record-work {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 7px;
+}
+
+.history-record-work small {
+  display: block;
+  color: #525b6c;
+  font-size: 0.62rem;
+}
+
+.history-record-work strong {
+  display: block;
+  margin-top: 1px;
+  font-size: 0.69rem;
+}
+
+.history-duration {
+  padding: 4px 7px;
+  border-radius: 5px;
+  background: #f0f2ff;
+  color: #454b5c;
+  font-size: 0.61rem;
+  white-space: nowrap;
+}
+
+.history-record-note {
+  margin: 8px 0 0;
+  padding-top: 7px;
+  border-top: 1px solid #edf0f7;
+  color: #495268;
+  font-size: 0.64rem;
+  line-height: 1.4;
+}
+
+.history-record-note strong {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.history-breakdown-card {
+  margin-top: 14px;
+  padding: 14px;
+}
+
+.history-breakdown-card > small {
+  display: block;
+  margin-top: -5px;
+  color: #555c6d;
+  font-size: 0.61rem;
+}
+
+.history-breakdown-month {
+  margin-top: 12px;
+}
+
+.history-breakdown-heading,
+.history-breakdown-detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.history-breakdown-heading {
+  align-items: center;
+  font-size: 0.66rem;
+  font-weight: 700;
+}
+
+.history-breakdown-detail {
+  margin-top: 4px;
+  color: #555c6d;
+  font-size: 0.59rem;
+}
+
+.history-progress {
+  height: 7px;
+  margin-top: 5px;
+  overflow: hidden;
+  border-radius: 99px;
+  background: #dfe5ff;
+}
+
+.history-progress span {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #1749c8;
+}
+
+.history-progress span.perfect {
+  background: #047857;
+}
+
+.history-download {
+  display: block;
+  width: 100%;
+  margin-top: 16px;
+  padding: 14px 12px;
+  border: 0;
+  border-radius: 12px;
+  background: #214fe0;
+  color: #fff;
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.history-empty {
+  padding: 22px 10px;
+  color: #697386;
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+.history-empty[hidden],
+.history-breakdown-card[hidden] {
+  display: none;
+}
+
+@media print {
+  body {
+    background: #fff;
+  }
+
+  .history-header-actions,
+  .history-period-tabs,
+  .history-period-controls,
+  .history-filters,
+  .history-download,
+  .employee-bottom-nav,
+  .history-standalone + .bottom-nav {
+    display: none !important;
+  }
+
+  .attendance-history-page {
+    width: 100%;
+    padding: 0;
+  }
+}
